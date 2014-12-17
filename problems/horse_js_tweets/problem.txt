@@ -18,7 +18,7 @@ The second argument, if there was no error, should be an
 {bold}array where each element is the String text of a tweet{/bold}.
 
 The array should contain ordered tweets for the {bold}single day{/bold} given
-as the first argument to your function. You must not return tweets
+as the second argument to your function. You must not return tweets
 for any other day.
 
 Your solution will be checked against the official solution to ensure
