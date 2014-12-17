@@ -67,3 +67,10 @@ way (but not the only way) to do this with LevelUP is to append '\xff'
 to the end of your key, this is the last ASCII character. So, 'start'
 of '2010' and 'end' of '2010\xff' would only match keys starting with
 '2010'.
+
+You can assume all given dates will be in the format YYYY-MM-DD, meaning you
+could select all entries for a given day without having to do any tricky date
+manipulation:
+
+  db.createReadStream({ start: '2011-26-01', end: '2011-26-01\xff' })...
+
